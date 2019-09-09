@@ -12,8 +12,7 @@ using Newtonsoft.Json;
 using System.IO;
 
 namespace StrygevaleWeather
-{
-    public partial class Form1 : Form
+{partial class Form1 : Form
     {
         public Form1()
         {
@@ -42,9 +41,27 @@ namespace StrygevaleWeather
             }
             response.Close();
 
-            richTextBox1.Text = answer;
+            OpenWeather.OpenWeather oW = JsonConvert.DeserializeObject<OpenWeather.OpenWeather> (answer);
+
+            panel1.BackgroundImage = oW.weather[0].Icon;
+            label2.Text = oW.weather[0].main;
+            label3.Text = oW.weather[0].description;
+            label4.Text = "Средняя температура (°C): " + oW.main.temp.ToString("0.##");
+            label8.Text = "Скорость (м/c): " + oW.wind.speed.ToString();
+            label9.Text = "Направление: " + oW.wind.deg.ToString();
+            label5.Text = "Влажность (%): " + oW.main.humidity.ToString();
+            label6.Text = "Давление (мм)" + ((int)oW.main.pressure).ToString();
+
         }
 
-      
+        private void GroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

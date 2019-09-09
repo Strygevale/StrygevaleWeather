@@ -48,7 +48,7 @@ namespace StrygevaleWeather.OpenWeather
             }
             set
             {
-                _temp_min = value - 273.15; //получаем цельсии
+                _temp_min = value - 273.15; 
             }
         }
 
@@ -62,7 +62,7 @@ namespace StrygevaleWeather.OpenWeather
             }
             set
             {
-                _temp_max = value - 273.15; //получаем цельсии
+                _temp_max = value - 273.15; 
             }
         }
 

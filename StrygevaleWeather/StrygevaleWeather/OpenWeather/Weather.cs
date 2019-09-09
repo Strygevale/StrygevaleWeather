@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
+using System.IO;
 
 namespace StrygevaleWeather.OpenWeather
 {
@@ -15,13 +16,13 @@ namespace StrygevaleWeather.OpenWeather
 
         public string description;
 
-        private string icon;
+        public string icon;
 
         public Bitmap Icon
         {
             get
             {
-                return new Bitmap(Image.FromFile("icons/{icon}.png")
+                return new Bitmap(Image.FromFile($"icons/{icon}.png"));
             }
         }
     }

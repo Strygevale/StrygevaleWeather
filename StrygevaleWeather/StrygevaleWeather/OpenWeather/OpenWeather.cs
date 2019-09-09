@@ -7,14 +7,30 @@ using Newtonsoft.Json;
 
 namespace StrygevaleWeather.OpenWeather
 {
+
     class OpenWeather
     {
+
+        public Coord coord;
+
+        public Weather[] weather;
+
         [JsonProperty("base")]
         public string Base;
 
+        public Main main;
+
         public double visibility;
 
+        public Wind wind;
+
+        public Clouds clouds;
+
         public double dt;
+
+        public Sys sys;
+
+        public int id;
 
         public string name;
 
