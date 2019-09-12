@@ -94,5 +94,26 @@
   <ItemGroup>
     <None Include="Resources\kuchevie-oblaka.1024x600.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tmb_10815_4971.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blur-Background-App.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-1294668.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nature-4140753_960_720.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-violet-blurry-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

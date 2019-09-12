@@ -19,9 +19,13 @@ namespace StrygevaleWeather.OpenWeather
             set
             {
                 _temp = value - 273.15; //получаем цельсии
+                
+                
             }
         }
 
+      
+        
         private double _pressure;
 
         public double pressure
@@ -48,7 +52,8 @@ namespace StrygevaleWeather.OpenWeather
             }
             set
             {
-                _temp_min = value - 273.15; 
+                _temp_min = value - 273.15;
+                 
             }
         }
 
@@ -62,9 +67,12 @@ namespace StrygevaleWeather.OpenWeather
             }
             set
             {
-                _temp_max = value - 273.15; 
+                _temp_max = _temp * 9/5 + 32;
+
             }
         }
+
+        
 
 
 
